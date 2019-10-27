@@ -12,8 +12,14 @@ model_path = 'Kaggle/model/'
 input_data_name = 'input.csv'
 
 input_data = pd.read_csv(data_path + input_data_name)
+drop_columns = ['TotalTimeStopped_p20',
+                'TotalTimeStopped_p50',
+                'TotalTimeStopped_p80',
+                'DistanceToFirstStop_p20',
+                'DistanceToFirstStop_p50',
+                'DistanceToFirstStop_p80']
 
-train_X = input_data.drop(columns=['TotalTimeStopped_p20', 'TotalTimeStopped_p50', 'TotalTimeStopped_p80', 'DistanceToFirstStop_p20', 'DistanceToFirstStop_p50', 'DistanceToFirstStop_p80'], axis=1)
+train_X = input_data.drop(columns=drop_columns, axis=1)
 train_Y_T20 = input_data.loc[:, 'TotalTimeStopped_p20']
 train_Y_T50 = input_data.loc[:, 'TotalTimeStopped_p50']
 train_Y_T80 = input_data.loc[:, 'TotalTimeStopped_p80']
