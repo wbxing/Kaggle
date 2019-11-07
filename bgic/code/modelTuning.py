@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-data_path = 'Kaggle/data/'
+data_path = 'bgic/data/'
 X_name = 'train_X.csv'
 Y_name = ['test_Y_T20.csv', 'test_Y_T50.csv', 'test_Y_T80.csv', 'test_Y_D20.csv', 'test_Y_D50.csv', 'test_Y_D80.csv']
 

@@ -7,8 +7,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-data_path = 'Kaggle/data/'
-model_path = 'Kaggle/model/'
+data_path = 'bgic/data/'
+model_path = 'bgic/model/'
 input_data_name = 'input.csv'
 
 input_data = pd.read_csv(data_path + input_data_name)
