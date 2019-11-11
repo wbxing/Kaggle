@@ -2,3 +2,5 @@
 *.csv
 model/
 *.code-workspace
+data/BigQuery-Dataset-Access*
+data/*.json
